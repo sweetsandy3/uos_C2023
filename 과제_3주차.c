@@ -2,29 +2,29 @@
 
 int main(void) {
 
-	// º¯¼ö »ý¼º
-	// ¹®ÀÚ¿­ char ÀÚ·áÇü 2°³¿Í Á¤¼ö int ÀÚ·áÇü 2°³ »ý¼º
-	// name°ú class´Â ÇÑ±ÛÀ» ³ÖÀ» °ø°£ÀÌ¹Ç·Î °¢°¢ 7¹ÙÀÌÆ®(2*3 +1), 21¹ÙÀÌÆ®(2*10 +1) Å©±âÀÇ ¹è¿­·Î ¼±¾ð
+	// ë³€ìˆ˜ ìƒì„±
+	// ë¬¸ìžì—´ char ìžë£Œí˜• 2ê°œì™€ ì •ìˆ˜ int ìžë£Œí˜• 2ê°œ ìƒì„±
+	// nameê³¼ classëŠ” í•œê¸€ì„ ë„£ì„ ê³µê°„ì´ë¯€ë¡œ ê°ê° 7ë°”ì´íŠ¸(2*3 +1), 21ë°”ì´íŠ¸(2*10 +1) í¬ê¸°ì˜ ë°°ì—´ë¡œ ì„ ì–¸
 	char name[7];
 	char class[21];
 	int birth;
 	int num;
 
-	// ÀÔ·Â ºÎºÐ
-	printf("ÀÌ¸§ ÀÔ·Â : ");
-	scanf_s("%s", name, (int)sizeof(name));	// ¹®ÀÚ¿­ ¼­½Ä¹®ÀÚ %s¸¦ ÀÌ¿ë, Å©±â ÀÎÀÚ ¹Þ´Â ºÎºÐ¿¡¼­ sizeof¸¸ »ç¿ëÇÏ¸é °æ°í°¡ ¶°¼­ Á¤¼öÇü int·Î º¯È¯
+	// ìž…ë ¥ ë¶€ë¶„
+	printf("ì´ë¦„ ìž…ë ¥ : ");
+	scanf_s("%s", name, (int)sizeof(name));	// ë¬¸ìžì—´ ì„œì‹ë¬¸ìž %së¥¼ ì´ìš©, í¬ê¸° ì¸ìž ë°›ëŠ” ë¶€ë¶„ì—ì„œ sizeofë§Œ ì‚¬ìš©í•˜ë©´ ê²½ê³ ê°€ ë– ì„œ ì •ìˆ˜í˜• intë¡œ ë³€í™˜
 
-	printf("»ý³â¿ùÀÏ ÀÔ·Â : ");
-	scanf_s("%d", &birth);	// Á¤¼ö ¼­½Ä¹®ÀÚ %d¸¦ ÀÌ¿ë
+	printf("ìƒë…„ì›”ì¼ ìž…ë ¥ : ");
+	scanf_s("%d", &birth);	// ì •ìˆ˜ ì„œì‹ë¬¸ìž %dë¥¼ ì´ìš©
 
-	printf("ÇÐ¹ø ÀÔ·Â : ");
-	scanf_s("%d", &num);		// Á¤¼ö ¼­½Ä¹®ÀÚ %d¸¦ ÀÌ¿ë
+	printf("í•™ë²ˆ ìž…ë ¥ : ");
+	scanf_s("%d", &num);		// ì •ìˆ˜ ì„œì‹ë¬¸ìž %dë¥¼ ì´ìš©
 
-	printf("ÇÐ°ú¸í ÀÔ·Â : ");
-	scanf_s("%s", class, (int)sizeof(class));	// ¹®ÀÚ¿­ ¼­½Ä¹®ÀÚ %s¸¦ ÀÌ¿ë
+	printf("í•™ê³¼ëª… ìž…ë ¥ : ");
+	scanf_s("%s", class, (int)sizeof(class));	// ë¬¸ìžì—´ ì„œì‹ë¬¸ìž %së¥¼ ì´ìš©
 
-	// Ãâ·Â ºÎºÐ
-	// °¢°¢¿¡ ´ëÀÀµÇ´Â ¼­½Ä¹®ÀÚ¿Í ÁÙ¹Ù²Þ \nÀ» ÀÌ¿ëÇØ ÇÑ¹ø¿¡ Ãâ·Â
-	printf("ÀÌ¸§ : %s\n»ý³â¿ùÀÏ : %d\nÇÐ¹ø : %d\nÇÐ°ú¸í : %s", name, birth, num, class);
+	// ì¶œë ¥ ë¶€ë¶„
+	// ê°ê°ì— ëŒ€ì‘ë˜ëŠ” ì„œì‹ë¬¸ìžì™€ ì¤„ë°”ê¿ˆ \nì„ ì´ìš©í•´ í•œë²ˆì— ì¶œë ¥
+	printf("ì´ë¦„ : %s\nìƒë…„ì›”ì¼ : %d\ní•™ë²ˆ : %d\ní•™ê³¼ëª… : %s", name, birth, num, class);
 
 }
